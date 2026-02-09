@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-VERSE | Oversize Revolution</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- FontAwesome fallback or use RemixIcon/Lucide -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <meta name="description" content="D-VERSE - The ultimate destination for premium oversized t-shirts. Redefine your style with our exclusive collection.">
+</head>
+<body class="bg-brand-black text-brand-white font-sans antialiased selection:bg-brand-red selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-brand-black/90 backdrop-blur-md border-b border-white/10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-display font-bold text-brand-red tracking-tighter hover:text-white transition-colors">
+                D-VERSE
+            </a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="uppercase text-sm tracking-widest hover:text-brand-red transition-colors">Home</a>
+                <a href="shop.html" class="uppercase text-sm tracking-widest hover:text-brand-red transition-colors">Shop</a>
+                <a href="about.html" class="uppercase text-sm tracking-widest hover:text-brand-red transition-colors">About</a>
+                <a href="contact.html" class="uppercase text-sm tracking-widest hover:text-brand-red transition-colors">Contact</a>
+            </div>
+
+            <div class="flex items-center space-x-6">
+                <a href="#" class="hover:text-brand-red transition-colors"><i class="ri-search-line text-xl"></i></a>
+                <a href="#" class="hover:text-brand-red transition-colors relative">
+                    <i class="ri-shopping-bag-line text-xl"></i>
+                    <span class="absolute -top-2 -right-2 bg-brand-red text-xs w-4 h-4 rounded-full flex items-center justify-center">0</span>
+                </a>
+                <button class="md:hidden text-2xl hover:text-brand-red">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Gradient/Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-br from-brand-black via-brand-dark to-[#2a0000] z-0"></div>
+        
+        <!-- Decorative Elements -->
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-red/20 rounded-full blur-[128px]"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-red/10 rounded-full blur-[128px]"></div>
+
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+            <h2 class="text-brand-red uppercase tracking-[0.5em] text-sm md:text-base mb-4 animate-fade-in-up">Welcome to the future of streetwear</h2>
+            <h1 class="heading-primary mb-6 animate-fade-in-up delay-100">
+                Redefine Your <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-white">Silhouette</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-fade-in-up delay-200">
+                Premium oversized t-shirts crafted for those who dare to stand out. 
+                Experience the perfect blend of comfort and bold aesthetics.
+            </p>
+            <div class="flex justify-center gap-4 animate-fade-in-up delay-300">
+                <a href="shop.html" class="btn-primary inline-block">Shop Collection</a>
+                <a href="about.html" class="px-8 py-3 border border-white/20 text-white font-bold uppercase tracking-wider hover:bg-white hover:text-brand-black transition-colors duration-300">Our Story</a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="ri-arrow-down-line text-2xl text-white/50"></i>
+        </div>
+    </header>
+
+    <!-- Featured Collection -->
+    <section class="py-24 bg-brand-dark relative">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-end mb-16">
+                <div>
+                    <h2 class="text-4xl font-display font-bold uppercase mb-2">New Drops</h2>
+                    <div class="h-1 w-24 bg-brand-red"></div>
+                </div>
+                <a href="shop.html" class="hidden md:flex items-center text-sm uppercase tracking-widest hover:text-brand-red transition-colors group">
+                    View All <i class="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="group relative bg-brand-black border border-white/5 hover:border-brand-red/50 transition-colors duration-300">
+                    <div class="aspect-[4/5] bg-[#1a1a1a] relative overflow-hidden flex items-center justify-center">
+                        <span class="text-brand-white/10 text-6xl font-black rotate-[-45deg] select-none">D-VERSE</span>
+                        
+                        <!-- Overlay -->
+                        <div class="absolute inset-0 bg-brand-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <button class="btn-primary transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Add to Cart</button>
+                        </div>
+                        <div class="absolute top-4 left-4 bg-brand-red text-white text-xs font-bold px-2 py-1 uppercase">New</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold uppercase mb-2 group-hover:text-brand-red transition-colors">Shadow Strike Tee</h3>
+                        <p class="text-gray-400 text-sm mb-4">Premium Heavyweight Cotton</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-display font-bold text-lg">LKR 4,500</span>
+                            <div class="flex space-x-2">
+                                <div class="w-4 h-4 rounded-full bg-black border border-white/20"></div>
+                                <div class="w-4 h-4 rounded-full bg-red-600 border border-white/20"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="group relative bg-brand-black border border-white/5 hover:border-brand-red/50 transition-colors duration-300">
+                    <div class="aspect-[4/5] bg-[#1a1a1a] relative overflow-hidden flex items-center justify-center">
+                        <span class="text-brand-white/10 text-6xl font-black rotate-[-45deg] select-none">D-VERSE</span>
+                         <!-- Overlay -->
+                         <div class="absolute inset-0 bg-brand-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <button class="btn-primary transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold uppercase mb-2 group-hover:text-brand-red transition-colors">Crimson Fade Tee</h3>
+                        <p class="text-gray-400 text-sm mb-4">Acid Wash Finish</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-display font-bold text-lg">LKR 4,800</span>
+                            <div class="flex space-x-2">
+                                <div class="w-4 h-4 rounded-full bg-red-900 border border-white/20"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="group relative bg-brand-black border border-white/5 hover:border-brand-red/50 transition-colors duration-300">
+                    <div class="aspect-[4/5] bg-[#1a1a1a] relative overflow-hidden flex items-center justify-center">
+                        <span class="text-brand-white/10 text-6xl font-black rotate-[-45deg] select-none">D-VERSE</span>
+                         <!-- Overlay -->
+                         <div class="absolute inset-0 bg-brand-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <button class="btn-primary transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Add to Cart</button>
+                        </div>
+                        <div class="absolute top-4 left-4 bg-white text-black text-xs font-bold px-2 py-1 uppercase">Best Seller</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold uppercase mb-2 group-hover:text-brand-red transition-colors">Void Walker Tee</h3>
+                        <p class="text-gray-400 text-sm mb-4">Oversized Drop Shoulder</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-display font-bold text-lg">LKR 4,500</span>
+                            <div class="flex space-x-2">
+                                <div class="w-4 h-4 rounded-full bg-white border border-white/20"></div>
+                                <div class="w-4 h-4 rounded-full bg-black border border-white/20"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center md:hidden">
+                <a href="shop.html" class="btn-primary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Statement / Marquee -->
+    <section class="bg-brand-red text-white py-12 overflow-hidden whitespace-nowrap">
+        <div class="inline-block animate-marquee">
+            <span class="text-6xl font-display font-black uppercase mx-8">Oversize Everything</span>
+            <span class="text-6xl font-display font-black text-black mx-8">D-VERSE</span>
+            <span class="text-6xl font-display font-black uppercase mx-8">Streetwear Redefined</span>
+            <span class="text-6xl font-display font-black text-black mx-8">Premium Quality</span>
+            <span class="text-6xl font-display font-black uppercase mx-8">Oversize Everything</span>
+            <span class="text-6xl font-display font-black text-black mx-8">D-VERSE</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-16 border-t border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-2">
+                    <a href="index.html" class="text-4xl font-display font-bold text-white mb-6 block tracking-tighter">
+                        D-VERSE
+                    </a>
+                    <p class="text-gray-400 max-w-sm mb-6">
+                        Redefining streetwear culture in Sri Lanka. Premium quality oversized t-shirts designed for the bold.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 hover:bg-brand-red flex items-center justify-center transition-colors">
+                            <i class="ri-instagram-line text-xl"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 hover:bg-brand-red flex items-center justify-center transition-colors">
+                            <i class="ri-facebook-fill text-xl"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 hover:bg-brand-red flex items-center justify-center transition-colors">
+                            <i class="ri-tiktok-fill text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold uppercase mb-6 tracking-wider">Shop</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="#" class="hover:text-brand-red transition-colors">New Arrivals</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Best Sellers</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">All Collections</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold uppercase mb-6 tracking-wider">Help</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Shipping & Returns</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Size Guide</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2024 D-VERSE. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-marquee {
+            animation: marquee 20s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | D-VERSE</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oswald:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body class="bg-brand-black text-brand-white font-sans antialiased selection:bg-brand-red selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-brand-black/90 backdrop-blur-md border-b border-white/10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html"
+                class="text-3xl font-display font-bold text-brand-red tracking-tighter hover:text-white transition-colors">
+                D-VERSE
+            </a>
+
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html"
+                    class="uppercase text-sm tracking-widest hover:text-brand-red transition-colors">Home</a>
+                <a href="shop.html" class="uppercase text-sm tracking-widest text-brand-red transition-colors">Shop</a>
+                <a href="about.html"
+                    class="uppercase text-sm tracking-widest hover:text-brand-red transition-colors">About</a>
+                <a href="contact.html"
+                    class="uppercase text-sm tracking-widest hover:text-brand-red transition-colors">Contact</a>
+            </div>
+
+            <div class="flex items-center space-x-6">
+                <a href="#" class="hover:text-brand-red transition-colors"><i class="ri-search-line text-xl"></i></a>
+                <a href="#" class="hover:text-brand-red transition-colors relative">
+                    <i class="ri-shopping-bag-line text-xl"></i>
+                    <span
+                        class="absolute -top-2 -right-2 bg-brand-red text-xs w-4 h-4 rounded-full flex items-center justify-center">0</span>
+                </a>
+                <button class="md:hidden text-2xl hover:text-brand-red">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="pt-32 pb-12 bg-brand-dark">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="heading-primary mb-4">All Collections</h1>
+            <p class="text-gray-400 max-w-xl mx-auto">Discover the latest in oversized streetwear fashion.</p>
+        </div>
+    </header>
+
+    <!-- Filters & Sort -->
+    <div class="border-b border-white/10 bg-brand-black sticky top-[73px] z-40">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center overflow-x-auto">
+            <div class="flex space-x-6 min-w-max">
+                <button class="text-brand-red font-bold uppercase text-sm border-b-2 border-brand-red pb-1">All
+                    Items</button>
+                <button class="text-gray-400 hover:text-white uppercase text-sm transition-colors pb-1">New
+                    Arrivals</button>
+                <button class="text-gray-400 hover:text-white uppercase text-sm transition-colors pb-1">Oversized
+                    Tees</button>
+                <button
+                    class="text-gray-400 hover:text-white uppercase text-sm transition-colors pb-1">Heavyweight</button>
+            </div>
+            <div class="hidden md:flex items-center space-x-2 text-sm text-gray-400">
+                <span>Sort by:</span>
+                <select class="bg-transparent border-none text-white focus:ring-0 cursor-pointer">
+                    <option class="bg-brand-black">Featured</option>
+                    <option class="bg-brand-black">Price: Low to High</option>
+                    <option class="bg-brand-black">Price: High to Low</option>
+                    <option class="bg-brand-black">Newest</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shop Grid -->
+    <section class="py-12 bg-brand-black min-h-screen">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+                <!-- Product Card Template -->
+                <div
+                    class="group relative bg-[#111] border border-white/5 hover:border-brand-red/50 transition-colors duration-300">
+                    <div class="aspect-[4/5] bg-[#1a1a1a] relative overflow-hidden flex items-center justify-center">
+                        <span class="text-brand-white/10 text-4xl font-black rotate-[-45deg] select-none">D-VERSE</span>
+                        <div
+                            class="absolute inset-0 bg-brand-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <button
+                                class="btn-primary transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold uppercase mb-1 group-hover:text-brand-red transition-colors">Shadow
+                            Strike</h3>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-gray-400">Oversize Fit</span>
+                            <span class="font-bold">LKR 4,500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative bg-[#111] border border-white/5 hover:border-brand-red/50 transition-colors duration-300">
+                    <div class="aspect-[4/5] bg-[#1a1a1a] relative overflow-hidden flex items-center justify-center">
+                        <span class="text-brand-white/10 text-4xl font-black rotate-[-45deg] select-none">D-VERSE</span>
+                        <div
+                            class="absolute inset-0 bg-brand-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <button
+                                class="btn-primary transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold uppercase mb-1 group-hover:text-brand-red transition-colors">
+                            Crimson Fade</h3>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-gray-400">Regular Fit</span>
+                            <span class="font-bold">LKR 4,800</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative bg-[#111] border border-white/5 hover:border-brand-red/50 transition-colors duration-300">
+                    <div class="aspect-[4/5] bg-[#1a1a1a] relative overflow-hidden flex items-center justify-center">
+                        <span class="text-brand-white/10 text-4xl font-black rotate-[-45deg] select-none">D-VERSE</span>
+                        <div
+                            class="absolute inset-0 bg-brand-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <button
+                                class="btn-primary transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold uppercase mb-1 group-hover:text-brand-red transition-colors">Void
+                            Walker</h3>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-gray-400">Drop Shoulder</span>
+                            <span class="font-bold">LKR 4,500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative bg-[#111] border border-white/5 hover:border-brand-red/50 transition-colors duration-300">
+                    <div class="aspect-[4/5] bg-[#1a1a1a] relative overflow-hidden flex items-center justify-center">
+                        <span class="text-brand-white/10 text-4xl font-black rotate-[-45deg] select-none">D-VERSE</span>
+                        <div
+                            class="absolute inset-0 bg-brand-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <button
+                                class="btn-primary transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Add
+                                to Cart</button>
+                        </div>
+                        <div
+                            class="absolute top-2 left-2 bg-brand-red text-white text-[10px] font-bold px-2 py-0.5 uppercase">
+                            Sale</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold uppercase mb-1 group-hover:text-brand-red transition-colors">Urban
+                            Legend</h3>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-gray-400">Boxy Fit</span>
+                            <span class="font-bold text-brand-red">LKR 3,900</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More items can be added here -->
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="mt-16 flex justify-center space-x-2">
+                <button
+                    class="w-10 h-10 flex items-center justify-center bg-brand-red text-white font-bold border border-brand-red cursor-pointer">1</button>
+                <button
+                    class="w-10 h-10 flex items-center justify-center bg-transparent text-gray-400 hover:text-white border border-white/10 hover:border-white transition-colors cursor-pointer">2</button>
+                <button
+                    class="w-10 h-10 flex items-center justify-center bg-transparent text-gray-400 hover:text-white border border-white/10 hover:border-white transition-colors cursor-pointer"><i
+                        class="ri-arrow-right-line"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index) -->
+    <footer class="bg-black py-16 border-t border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-2">
+                    <a href="index.html" class="text-4xl font-display font-bold text-white mb-6 block tracking-tighter">
+                        D-VERSE
+                    </a>
+                    <p class="text-gray-400 max-w-sm mb-6">
+                        Redefining streetwear culture in Sri Lanka. Premium quality oversized t-shirts designed for the
+                        bold.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 hover:bg-brand-red flex items-center justify-center transition-colors">
+                            <i class="ri-instagram-line text-xl"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 hover:bg-brand-red flex items-center justify-center transition-colors">
+                            <i class="ri-facebook-fill text-xl"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 hover:bg-brand-red flex items-center justify-center transition-colors">
+                            <i class="ri-tiktok-fill text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold uppercase mb-6 tracking-wider">Shop</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="#" class="hover:text-brand-red transition-colors">New Arrivals</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Best Sellers</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">All Collections</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold uppercase mb-6 tracking-wider">Help</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Shipping & Returns</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Size Guide</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2024 D-VERSE. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
